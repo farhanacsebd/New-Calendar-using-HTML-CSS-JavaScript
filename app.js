@@ -1,3 +1,4 @@
+// link up 
 const currentDate = document.getElementById('current-date');
 const days = document.getElementById('days');
 const icons = document.querySelectorAll('.icons span');
@@ -10,6 +11,8 @@ let currentMonth = date.getMonth();
 const months = ["January", "February", "March", "April", "May", "June", "July",
               "August", "September", "October", "November", "December"];
 
+
+//main function   
 const calendar = () =>{
     let firstDayofMonth = new Date(currentYear, currentMonth, 1).getDay(), 
     lastDateofMonth = new Date(currentYear, currentMonth + 1, 0).getDate(),//ekhane +1 or 0 diye bujhay mashta 30 naki 31 er hobe
@@ -35,17 +38,6 @@ const calendar = () =>{
     days.innerHTML = liTag;
 }
 calendar()
-
-/* icons.forEach(icon => {
-    icon.addEventListener('click',()=>{
-        // console.log(icon);
-        currentMonth = icon.id === "prev" ? currentMonth - 1 : currentMonth + 1;
-        calender();
-    })
-}); */
-
-
-
 
 
 icons.forEach(icon => { 
