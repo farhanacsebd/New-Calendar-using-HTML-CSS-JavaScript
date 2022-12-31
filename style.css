@@ -71,7 +71,7 @@ header .current-date{
   font-size: 1.07rem;
 }
 .calendar .weeks li{
-  font-weight: 500;
+  font-weight: 900;
   cursor: default;
 }
 .calendar .days li{
@@ -98,8 +98,9 @@ header .current-date{
   transform: translate(-50%, -50%);
 }
 .days li.active::before{
-  background: #9B59B6;
+  background: #5012b4;
 }
 .days li:not(.active):hover::before{
   background: #f2f2f2;
+  font-weight: bold;
 }
